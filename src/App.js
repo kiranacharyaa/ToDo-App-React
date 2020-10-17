@@ -32,7 +32,7 @@ function App() {
   return (
     <section className="page-section">
       <div className="todo-app-container">
-        <h1 className="text-center">Simple ToDo App</h1>
+        <h1 className="text-center">Simple ToDo App React</h1>
         <div className="todo-app_input-section">
           <Form textInput={textInput} todoData={todoData} setTodoData={setTodoData} setTextInput={setTextInput} completed={completed} setCompleted={setCompleted}/>
         </div>
