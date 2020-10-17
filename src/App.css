@@ -16,6 +16,8 @@ body {
 
 .todo-app-container {
     max-width: 500px;
+    padding-left:15px;
+    padding-right:15px;
     margin: 0 auto;
 }
 
@@ -26,11 +28,11 @@ body {
 .todo-app_input-section input[type="text"] {
     padding: 10px 15px;
     font-size: 18px;
-    border: 1px solid #ddd;
+    width:100%;
+    border: 1px solid #eee;
     border-radius: 0;
     outline: 0;
-    flex-grow: 2;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .todo-app_input-section input[type="text"]::placeholder {
@@ -55,8 +57,15 @@ body {
     padding-left: 0;
 }
 
-.todo-app_list__todo ul li {
+.todo-app_list__todo ul li.todo-item {
     padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.todo-app_list__todo ul li.todo-item .left{
+    width:calc(100% - 130px);
 }
 
 .todo-item.completed {

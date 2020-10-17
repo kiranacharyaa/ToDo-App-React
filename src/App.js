@@ -40,7 +40,7 @@ function App() {
           <div className="todo-app_list__todo">
             <ul>
               {todoData.map((items) => (
-                <TodoList text={items.text} todoData={todoData} setTodoData={setTodoData} items={items} id={items.id} completed={completed} setCompleted={setCompleted}/>
+                <TodoList key={items.id} text={items.text} todoData={todoData} setTodoData={setTodoData} items={items} completed={completed} setCompleted={setCompleted}/>
               ))}
             </ul>
           </div>

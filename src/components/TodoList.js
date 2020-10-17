@@ -23,10 +23,12 @@ function TodoList({id, text, items, todoData, setTodoData, completed}) {
     }
     return (
         <li className={`todo-item ${(items.completed)? "completed" : ''}`} id={id}>
-            {text}
-            <div style={{float:"right"}}>
-                <button className="check-list" type="button" onClick={changeCheckValue}>Done</button>
-                <button className="delete-list" type="button" onClick={deleteItem}>X</button>
+            <div className="left">
+                {text}
+            </div>
+            <div className="right">
+                <button className="check-list" type="button" title="Completed" onClick={changeCheckValue}>Done</button>
+                <button className="delete-list" type="button" title="Delete" onClick={deleteItem}>X</button>
             </div>
         </li>
     )
